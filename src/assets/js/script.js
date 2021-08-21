@@ -85,7 +85,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: "assets/mailer/smart.php",
+            url: "../assets/mailer/smart.php",
             data: $(this).serialize()
         }).done(function() {
             $(this).find('input').val('');
